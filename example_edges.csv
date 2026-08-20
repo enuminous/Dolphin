@@ -1,0 +1,6 @@
+source,target,lag,weight
+obs_a,obs_b,1,1.0
+obs_b,obs_c,1,1.0
+obs_c,obs_d,1,1.0
+obs_d,obs_a,2,0.8
+obs_a,obs_c,2,0.7

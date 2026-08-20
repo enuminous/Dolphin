@@ -1,0 +1,41 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DOLPHIN Latent-State Record",
+  "type": "object",
+  "required": [
+    "machine_version",
+    "timestamp",
+    "system_id",
+    "latent_score"
+  ],
+  "properties": {
+    "machine_version": {
+      "type": "string"
+    },
+    "timestamp": {
+      "type": "string"
+    },
+    "system_id": {
+      "type": "string"
+    },
+    "latent_score": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "missing_fraction": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "relational_residual_mean": {
+      "type": "number"
+    },
+    "reconstruction_error": {
+      "type": "number"
+    },
+    "latent_velocity": {
+      "type": "number"
+    }
+  }
+}
